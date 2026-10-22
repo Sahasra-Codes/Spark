@@ -80,6 +80,17 @@ Backend / storage: lightweight backend plus a small database for users, profile 
 
 Keep the first version simple: a thin web app wrapped around a short chain of LLM calls.
 
+Frontend setup
+
+The React starter app lives in `frontend/`. From that directory, install dependencies and start the Vite development server:
+
+```sh
+npm install
+npm run dev
+```
+
+Run `npm run build` to type-check and create a production build in `frontend/dist/`.
+
 Design notes
 Cream background, white envelopes, a few accent colors, a fun font
 Envelopes should feel like a small event to open

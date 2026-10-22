@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap");
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #282b25;
+  background: #f8f3e9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 28px 7.2%;
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #30382d;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  text-decoration: none;
+}
+
+.wordmark-icon {
+  color: #e78657;
+  font-size: 25px;
+}
+
+.header-link {
+  color: #55594f;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.header-link span {
+  padding-left: 5px;
+  color: #d77a4d;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  align-items: center;
+  gap: 42px;
+  max-width: 1240px;
+  min-height: 570px;
+  margin: 0 auto;
+  padding: 38px 9.5% 94px;
+}
+
+.hero-copy {
+  padding-bottom: 12px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0;
+  color: #68715f;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.eyebrow-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #e78657;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin: 24px 0 19px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(55px, 6.4vw, 80px);
+  font-weight: 600;
+  letter-spacing: -3.8px;
+  line-height: 1.06;
+}
+
+h1 span {
+  color: #657658;
+  font-style: italic;
+}
+
+.hero-description {
+  max-width: 410px;
+  margin-bottom: 28px;
+  color: #6b6c63;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.primary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 22px;
+  padding: 14px 19px;
+  border-radius: 5px;
+  background: #384735;
+  color: #fffdf7;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.primary-link:hover {
+  transform: translateY(-2px);
+  background: #4a5d45;
+}
+
+.gentle-note {
+  margin: 13px 0 0;
+  color: #8a887e;
+  font-size: 11px;
+}
+
+.envelope-scene {
+  position: relative;
+  display: grid;
+  min-height: 370px;
+  place-items: center;
+}
+
+.sun-shape {
+  position: absolute;
+  top: 34px;
+  right: 7%;
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  background: #f0ddbd;
+}
+
+.envelope {
+  position: relative;
+  z-index: 1;
+  width: min(340px, 90%);
+  height: 225px;
+  margin: 36px 0 0 6px;
+  transform: rotate(-5deg);
+  filter: drop-shadow(0 20px 22px rgb(83 65 43 / 14%));
+}
+
+.envelope-card {
+  position: absolute;
+  top: -31px;
+  left: 10%;
+  display: flex;
+  width: 80%;
+  height: 190px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  border: 1px solid #e8dfd0;
+  background: #fffdf8;
+  color: #464a3f;
+  text-align: center;
+}
+
+.card-label {
+  color: #b26f4e;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.envelope-card p {
+  margin: 16px 0 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 21px;
+  font-style: italic;
+  line-height: 1.45;
+}
+
+.card-spark {
+  margin-top: 7px;
+  color: #d78258;
+  font-size: 17px;
+}
+
+.envelope-front {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #e9b48b;
+  clip-path: polygon(0 0, 50% 54%, 100% 0, 100% 100%, 0 100%);
+}
+
+.envelope-front::before,
+.envelope-front::after {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  content: "";
+}
+
+.envelope-front::before {
+  left: 0;
+  border-right: 170px solid transparent;
+  border-bottom: 225px solid #e3a77e;
+}
+
+.envelope-front::after {
+  right: 0;
+  border-bottom: 225px solid #efc09a;
+  border-left: 170px solid transparent;
+}
+
+.envelope-flap {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 125px solid #f3cba8;
+  border-right: 170px solid transparent;
+  border-left: 170px solid transparent;
+}
+
+.seal {
+  position: absolute;
+  z-index: 3;
+  top: 105px;
+  left: calc(50% - 18px);
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 1px solid #e8c18c;
+  border-radius: 50%;
+  background: #fbf0d9;
+  color: #8c7651;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 19px;
+  font-style: italic;
+}
+
+.scene-caption {
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  left: 0;
+  color: #848275;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+}
+
+.scene-star {
+  position: absolute;
+  color: #d9865d;
+}
+
+.star-one {
+  top: 53px;
+  left: 10%;
+  font-size: 24px;
+}
+
+.star-two {
+  right: 2%;
+  bottom: 85px;
+  color: #809071;
+  font-size: 20px;
+}
+
+.how-it-works {
+  padding: 78px 9.5% 43px;
+  background: #fffdf8;
+}
+
+.section-heading {
+  max-width: 590px;
+  margin: 0 auto 44px;
+  text-align: center;
+}
+
+.section-heading .eyebrow {
+  justify-content: center;
+}
+
+h2 {
+  margin: 13px 0 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(31px, 4vw, 43px);
+  font-weight: 600;
+  letter-spacing: -1.3px;
+  line-height: 1.2;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 42px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.step {
+  padding-top: 17px;
+  border-top: 1px solid #e7e3d8;
+}
+
+.step-number {
+  color: #cd805b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h3 {
+  margin: 13px 0 8px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 21px;
+}
+
+.step p {
+  margin-bottom: 0;
+  color: #73736a;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.disclaimer {
+  max-width: 1000px;
+  margin: 55px auto 0;
+  color: #949187;
+  font-size: 11px;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    padding: 22px 7%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 43px 8% 66px;
+  }
+
+  h1 {
+    font-size: clamp(56px, 13vw, 75px);
+  }
+
+  .envelope-scene {
+    min-height: 330px;
+  }
+
+  .sun-shape {
+    top: 16px;
+    right: 15%;
+    width: 250px;
+    height: 250px;
+  }
+
+  .how-it-works {
+    padding: 63px 8% 35px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .step {
+    padding-top: 14px;
+  }
+
+  .disclaimer {
+    margin-top: 38px;
+    line-height: 1.6;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
