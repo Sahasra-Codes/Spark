@@ -3,8 +3,6 @@
 
 Spark
 
-Get your spark back by doing, not just thinking.
-
 Spark is a website where an AI guide gets to know you through a short voice conversation, then gives you personalized real-world challenges, one at a time, as sealed envelopes. After each challenge you reflect on how it went, and the guide uses what you say to shape what comes next.
 
 Spark is not therapy and does not replace professional support. It is a "partner in crime" that nudges you to try new things and notice how you respond.
